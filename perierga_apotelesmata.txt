@@ -1,0 +1,94 @@
+NOT CLASSIFIED... MIXTURES
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... FEATURES
+NOT CLASSIFIED... MANUAL
+NOT CLASSIFIED... ΚΑΘΩΣ
+NOT CLASSIFIED... ΕΣΤΕΙΛΕΣ
+NOT CLASSIFIED... FEATURES
+NOT CLASSIFIED... ΣΥΝΗΘΙΣΜΕΝΑ
+NOT CLASSIFIED... ΗΘΕΛΑ
+NOT CLASSIFIED... ΜΑΘΩ
+NOT CLASSIFIED... FEATURES
+NOT CLASSIFIED... ΠΑΡΕΛΘΟΝ
+NOT CLASSIFIED... ΒΟΗΘΕΙΑ
+NOT CLASSIFIED... ΕΠΑΝΗΛΘΕ
+NOT CLASSIFIED... ΡΥΘΜΟΣ
+NOT CLASSIFIED... ΜΕΤΑΞΥ
+NOT CLASSIFIED... PROJECT
+NOT CLASSIFIED... ΕΠΕΞΗΓΗΜΑΤΙΚΟ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΔΙΕΥΘΥΝΣΗ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΑΚΟΛΟΥΘΗΣΕΙ
+NOT CLASSIFIED... ΠΡΟΚΗΡΥΞΗ
+NOT CLASSIFIED... ΑΝΟΙΞΗ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΥΠΟΒΑΛΛΕΙΣ
+NOT CLASSIFIED... ΘΕΜΑ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΔΕΙΞΕΙ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΤΕΛΕΥΤΑΙΑ
+NOT CLASSIFIED... ΧΘΕΣ
+NOT CLASSIFIED... ΓΚΕΡΤ
+NOT CLASSIFIED... ΚΙΝΔΥΝΕΨΑΝ
+NOT CLASSIFIED... ΧΘΕΣ
+NOT CLASSIFIED... ΕΠΕΣΤΡΕΨΑ
+NOT CLASSIFIED... ΑΙΣΘΑΝΟΜΑΙ
+NOT CLASSIFIED... FULL
+NOT CLASSIFIED... RECOVERY
+NOT CLASSIFIED... ΑΣΧΟΛΗΘΗΚΑΤΕ
+NOT CLASSIFIED... ΜΟΝΤΕΛΑ
+NOT CLASSIFIED... ΠΡΟΣΠΑΘΗΣΑ
+NOT CLASSIFIED... WILLIAM
+NOT CLASSIFIED... EMAIL
+NOT CLASSIFIED... ΘΕΩΡΗΣΑ
+NOT CLASSIFIED... FUNCTIONS
+NOT CLASSIFIED... WILLIAM
+NOT CLASSIFIED... ΜΟΝΤΕΛΩΝ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΑΘΗΝΑ
+NOT CLASSIFIED... ΗΘΕΛΑ
+NOT CLASSIFIED... ΕΡΘΕΙ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... BOSTON
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΘΑ
+NOT CLASSIFIED... ΣΥΝΑΝΤΗΘΟΥΜΕ
+
+WRONG         ... ΤΗΝ ΤΙΝ
+WRONG         ... ΑΙΣΙΩΣ ΑΙΣΙΟΣ
+WRONG         ... ΑΝΑΓΝΩΡΙΣΗΣ ΑΝΑΓΝΩΡΙΣΙΣ
+WRONG         ... ΤΗΝ ΤΙΝ
+WRONG         ... ΧΡΗΣΗ ΧΡΙΣΗ
+WRONG         ... ΤΗΝ ΤΙΝ
+WRONG         ... ΧΡΗΣΗ ΧΡΙΣΗ
+WRONG         ... ΚΑΝΩ ΚΑΝΟ
+WRONG         ... ΔΥΟ ΔΙΟ
+WRONG         ... Η Ι
+WRONG         ... ΠΕΡΙΣΣΟΤΕΡΩΝ ΠΕΡΙΣΣΟΤΕΡΟΝ
+WRONG         ... ΤΗΝ ΤΙΝ
+WRONG         ... ΧΡΗΣΗ ΧΡΙΣΗ
+WRONG         ... ΚΑΝΩ ΚΑΝΟ
+WRONG         ... Ο Ω
+WRONG         ... ΕΥΧΑΡΙΣΤΩ ΕΥΧΑΡΙΣΤΟ
+WRONG         ... ΤΗΝ ΤΙΝ
+WRONG         ... Ο Ω
+WRONG         ... Η Ι
+WRONG         ... Ο Ω
+WRONG         ... Ο Ω
+WRONG         ... Ο Ω
+WRONG         ... Ο Ω
+WRONG         ... ΤΗΝ ΤΙΝ
+WRONG         ... ΩΡΑ ΟΡΑ
+WRONG         ... ΠΑΡΩ ΠΑΡΟ
+WRONG         ... ΤΗΝ ΤΙΝ
+WRONG         ... ΕΥΧΑΡΙΣΤΩ ΕΥΧΑΡΙΣΤΟ
+
+Percentages
+1) Correct Converted Words  : 82.772 %
+2) English converted Greek  : 0.000 %
+3) Not Classified Words     : 11.683 %
+4) Wrong Converted Words    : 5.545 %
