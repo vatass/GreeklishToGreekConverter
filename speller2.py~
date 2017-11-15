@@ -6,7 +6,7 @@ def removegreekshit( word) :
 	index = 0
 	for i in range(1, len(word1), 2):
 		wordfixed[index] = word[i] 
-			
+	
 
 def main():
 
