@@ -10,3 +10,5 @@ alph_el=$3
 fstcompile --isymbols=$2 --osymbols=$3 ${name}.txt fst_lang/${name}.fst
 fstdraw --portrait --isymbols=$2 --osymbols=$3 fst_lang/${name}.fst fst_lang/dot 
 dot -Tjpg fst_lang/dot > alphabet_dict/${name}.jpg
+
+fstprint --isymbols=$2 --osymbols=$3 fst_lang/${name}.fst fst_lang/${name}_xaxaxa.txt

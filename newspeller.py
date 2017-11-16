@@ -13,7 +13,6 @@ return rword
 
 def converttogreek(word) : 
 
-
 	gword = []
 	index = 0
 	for i in range(1, len(word), 1):
@@ -32,14 +31,6 @@ def FindMissingChars(word1,word2,diffs):
 		else: 
 			
 return missing 
-
-
-
-
-
-
-
-
 
 #αληθεια
 #αλληθεια
@@ -83,7 +74,7 @@ return extras
 
 
 				
-def Levenstein( word1 , word2 ): 
+d# ef Levenstein( word1 , word2 ): 
 
 	
 
@@ -91,7 +82,7 @@ def Levenstein( word1 , word2 ):
 
 
 
-return differences 
+#return differences 
 
 
 #This function returns a list with tuples (item1,item2,flag) where item1 and item2 constitute the rule and flag is a bollean value.

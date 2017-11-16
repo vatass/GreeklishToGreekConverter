@@ -15,8 +15,8 @@ def main():
         shutil.rmtree('prob')
     os.mkdir('prob')
 
-    f1 = open("msgs/train_gr.txt", "r")
-    f2 = open("msgs/train_greng.txt", "r")
+    f1 = open("msgs2/train_gr.txt", "r")
+    f2 = open("msgs2/train_greng.txt", "r")
 
     # f1 = open("msgs/test_gr.txt", "r")
     # f2 = open("msgs/test_greng.txt", "r")
