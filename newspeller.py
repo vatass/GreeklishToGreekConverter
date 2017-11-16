@@ -7,7 +7,7 @@ def removegreekshit(word):
 	rword = []
 	index = 0
 	for i in range(1, len(word1), 2):
-	wordfixed[index] = word[i] 
+		wordfixed[index] = word[i] 
 		
 return rword
 
@@ -16,7 +16,7 @@ def converttogreek(word) :
 	gword = []
 	index = 0
 	for i in range(1, len(word), 1):
-	gword[i] = '\xce' + word[i] 
+		gword[i] = '\xce' + word[i] 
 		
 return gword 
 
@@ -74,7 +74,7 @@ return extras
 
 
 				
-d# ef Levenstein( word1 , word2 ): 
+#def Levenstein( word1 , word2 ): 
 
 	
 
@@ -99,14 +99,14 @@ def ExamineSubsRearrs( word1, word2, diffs):
 			else: 
 				# The substitution is found !
 				faults[i] = [ char2, char1, 0 ]
-				i = i + 1  
+				
 	if diffs == 2 : 
 		# This diff can be either two subs or a rearr 
 		# rearr is when chars substituted are same and consecutive
 		firsttime = 1
-		ind = 0  		 
+		ind = -1  		 
  		for char1,char2 in zip(word1,word2):
- 
+ 			ind = ind + 1
 			if char1 == char2 : 
 				continue 
 			else: 
@@ -125,35 +125,41 @@ def ExamineSubsRearrs( word1, word2, diffs):
 	else: 		
 		 
 		firsttime = 1
-		ind = 0			
-		for char1,char2 in zip(word1,word2):  	
-				
-			if char1 == char2 : 
+		ind = -1  		 
+ 		for char1,char2 in zip(word1,word2):
+ 			ind = ind + 1	
+			if char1 == char2 :
+				if (ind - 1 == wi) : 
+					firsttime = 1
+					faults[i] = [ word2[wi], word1[wi], 0] 
 				continue 
-			else:  		
-				if firsttime == 1:
-					wi = ind 
-					firsttime = 0
+				
+				
+			else:
+				if firsttime == 1 : 
+					wi = ind
+					firsttime = 0 
+					 				
 				else: 
-					if (ind - 1) == wi 
-						#consecutive -> swap 
-						faults[i] = [ char2, char1, 1] 
-						i = i + 1
+					if (ind - 1) == wi :
+						# consecutive -> swap  
+					  	faults[i] = [ char2, char1, 1]       
+						i = i + 1 
 						firsttime = 1 
+					else : 		
+					
 
-					else: 
-						faults[i] = [ word2[wi], word1[wi], 0]  
-						i = i + 1
-						faults[i] = [ word2[ind], word1[ind], 0]  										
+
+
 	return faults 
 
 
-def main():
 
- import os
- import shutil
- import math
- import difflib
+
+import os
+import shutil
+import math
+import difflib
 
 f1 = open("slp_spell_data/trial_co.txt", "r")  
 f2 = open("slp_spell_data/trial_wr.txt", "r")
@@ -174,64 +180,64 @@ for line1, line2 in zip(f1, f2):
 
         for curword1, curword2 in zip(s1, s2):  
 
-	word1 = removegreekshit(curword1)
-	word2 = removegreekshit(curword2) 
-	
-	if word1 in word2 : 
-		continue 
-	else 
-		# here words have differences. Let's find them out !
-
-
-		differences = Levenstein(word1,word2) 
+		curword1 = list(curword1)
+		curword2 = list(curword2)
+		word1 = removegreekshit(curword1)
+		word2 = removegreekshit(curword2) 
 		
-		condition = len(curword1) - len(curword2) 
+		if word1 in word2 : 
+			continue 
+		else 
+			# here words have differences. Let's find them out !
+
+
+			differences = Levenstein(word1,word2) 
 		
-		if condition == 0  
-			# Equal length
-			 
-			faults_list = ExamineSubsRearrs(word1,word2,differences)
+			condition = len(curword1) - len(curword2) 
+		
+			if condition == 0  
+				# Equal length
+				 
+				faults_list = ExamineSubsRearrs(word1,word2,differences)
 			
-			# Retrieve Info faults_list			
-			for l = 1 in len(faults_list):
-				tmp = faults_list[l]
-				if tmp[2] == 1 : 
-					rearr = rearr + 1
-					a = "rearr" + greekshit + str(tmp[0]) + ' ' + greekshit  + str(tmp[1]) +  '\n'
-				else: 
-					subs = subs + 1
-		 			a = "subs" + greekshit + str(tmp[0]) + ' ' + greekshit + str(tmp[1]) +  '\n'
+				# Retrieve Info faults_list			
+				for l = 1 in len(faults_list):
+					tmp = faults_list[l]
+					if tmp[2] == 1 : 
+						rearr = rearr + 1
+						a = "rearr" + greekshit + str(tmp[0]) + ' ' + greekshit  + str(tmp[1]) +  '\n'
+					else: 
+						subs = subs + 1
+			 			a = "subs" + greekshit + str(tmp[0]) + ' ' + greekshit + str(tmp[1]) +  '\n'
 				
-				tempfile.write(a) 
+					tempfile.write(a) 
 				
 
-		elif condition > 0: 
-			# curword2 missing letters 
-			missing = [] 	
-			missing = FindMissingChars(word1,word2) 		 
+			elif condition > 0: 
+				# curword2 missing letters 
+				missing = [] 	
+				missing = FindMissingChars(word1,word2) 		 
 			
-			for n = 0 in len(missing): 
-				a = "miss" + "keno" + '\n' + greekshit + str(missing[n]) + '\n'  
-				tempfile.write(a)
-		else: 
+				for n = 0 in len(missing): 
+					a = "miss" + "keno" + '\n' + greekshit + str(missing[n]) + '\n'  
+					tempfile.write(a)
+			else: 
 
-			# curword2 has extra letters 
+				# curword2 has extra letters 
 					
-			print("geia") 
-			extra = [] 
-			extra = FindExtraChars(word1,word2,Differences) 
+				print("geia") 
+				extra = [] 
+				extra = FindExtraChars(word1,word2,Differences) 
 			
-			for m = 0 in len(extra): 
-				a = "extra" + greekshit + str(extra[n]) + ' ' + "keno" + '\n' 
-				tempfile.write(a) 				
+				for m = 0 in len(extra): 
+					a = "extra" + greekshit + str(extra[n]) + ' ' + "keno" + '\n' 
+					tempfile.write(a) 				
 				
 
 
 
 
 
-		
-main () 	
 
 
 
