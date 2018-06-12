@@ -15,11 +15,8 @@ def main():
         shutil.rmtree('prob')
     os.mkdir('prob')
 
-    f1 = open("msgs2/train_gr.txt", "r")
-    f2 = open("msgs2/train_greng.txt", "r")
-
-    # f1 = open("msgs/test_gr.txt", "r")
-    # f2 = open("msgs/test_greng.txt", "r")
+    f1 = open("msgs/train_gr.txt", "r")
+    f2 = open("msgs/train_greng.txt", "r")
 
     tempfile1 = open('temp/outputfile1.txt', "w")
     tempfile2 = open('temp/outputfile2.txt', "w")
@@ -109,8 +106,6 @@ def main():
                             else:
                                 currule = str(curr_char_eng) + ' ' + str(curr_char_gr) + '\n'
                                 tempfile1.write(currule)
-
-
                 else:
                     for i in range(1, len(curword1), 2):
                         if flag==1:

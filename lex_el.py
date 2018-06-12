@@ -18,10 +18,9 @@ for line in f:
     cnt_words = cnt_words + 1
 
     s = list(line)
-
     curr_char = '\xce' + s[1]
 
-    if len(s) == 1:
+    if len(s) == 2:
         curr_state = str(0) + ' ' + str(1) + ' ' + curr_char + '\n'
         new_file.write(curr_state)
     else:

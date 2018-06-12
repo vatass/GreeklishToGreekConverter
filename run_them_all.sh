@@ -22,4 +22,13 @@ echo 'Creating Greeklish to English/Greek converter...'
 
 ## bhma 9-10-11
 echo 'Running accuracy test of Greeklish to Greek conversion...'
-python lex_greng.py
+python greeklish_conversion_test.py
+
+## bhma 12 i) ii) iii)
+echo 'Finding faults between correct and wrong train texts...'
+python newspeller.py
+
+echo ' '
+echo 'Please run newspeller.py script now'
+echo 'Then run script run_them_all2.sh'
+

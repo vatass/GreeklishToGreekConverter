@@ -34,10 +34,6 @@ def main():
     tot.close()
     ###################################
 
-
-
-
-
     # shutil.rmtree('prob')
     # shutil.rmtree('temp')
 
@@ -69,9 +65,7 @@ def main():
     for curr in alphabet:
         alph_lex.write(curr + '\n')
 
-        #p = 1000.0
-        p = 10.0
-        #p = -1.25
+        p = 1000.0
         curr_state = str(0) + ' ' + str(1) + ' ' + curr + ' ' + curr + ' ' + str(p) + '\n'
         alph_fst.write(curr_state)
 
